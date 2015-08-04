@@ -26,7 +26,7 @@ if (Meteor.isClient) {
       });
     },
     "click .delete": function(){
-      Task.remove(this._id);
+      Tasks.remove(this._id);
     }
   });
 }
