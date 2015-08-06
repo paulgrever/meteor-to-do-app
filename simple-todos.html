@@ -5,7 +5,7 @@
 <body>
   <div class="container">
     <header>
-      <h1>Todo List ({{incompleteCount}}) for {{currentUser.username}}</h1>
+      <h1>Todo List ({{incompleteCount}}) {{#if currentUser}}for {{currentUser.username}} {{/if}}</h1>
 
       <label class="hide-completed">
         <input type="checkbox" checked="{{hideCompleted}}" />
